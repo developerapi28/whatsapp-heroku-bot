@@ -8,7 +8,7 @@ dateLog('Started index.js')
 initBot()
 
 function initBot() {
-	dateLog('Initializing bot')
+	dateLog('Initializing BOT!')
 	venom
 		//	create bot with options
 		.create(venomOptions)
@@ -21,7 +21,7 @@ function initBot() {
 }
 
 function startBot(_client) {
-	dateLog('Starting bot')
+	dateLog('Starting BOT...')
 	client = _client
 
 	//	restart bot every 20 minutos
@@ -29,7 +29,7 @@ function startBot(_client) {
 	setTimeout(() => {
 		//	close bot
 		client.close()
-		dateLog('Closing bot')
+		dateLog('Closing BOT...')
 
 		//	init bot again
 		initBot()
